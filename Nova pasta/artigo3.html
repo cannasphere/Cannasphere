@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo 3: História e Cultura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>CannaSphere</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="comunidade.html">Comunidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+</header>
+
+<section>
+    <h2>História e Cultura</h2>
+    <p>A Cannabis tem uma história rica e fascinante que remonta a mais de 5.000 anos. Utilizada por antigas civilizações na Ásia, ela desempenhou um papel importante tanto na medicina quanto em práticas espirituais e culturais.</p>
+
+    <p>Na Índia, a planta é considerada sagrada e está associada ao deus Shiva. No Ocidente, ela foi amplamente usada como fibra para a produção de tecidos e papel antes de ser regulamentada no século XX.</p>
+
+    <p>Hoje, a Cannabis continua a inspirar movimentos culturais e debates políticos em torno de sua legalização e uso responsável.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 CannaSphere. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+    function toggleTheme() {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
+    }
+</script>
+
+</body>
+</html>
